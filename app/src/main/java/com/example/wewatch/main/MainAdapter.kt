@@ -1,4 +1,4 @@
-package com.example.wewatch
+package com.example.wewatch.main
 
 import android.content.Context
 import android.view.LayoutInflater

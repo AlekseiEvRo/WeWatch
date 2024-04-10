@@ -1,4 +1,4 @@
-package com.example.wewatch
+package com.example.wewatch.search
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,9 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.wewatch.R
-import com.example.wewatch.SearchActivity
 import com.example.wewatch.Model.Item
+import com.example.wewatch.R
 import com.squareup.picasso.Picasso
 
 

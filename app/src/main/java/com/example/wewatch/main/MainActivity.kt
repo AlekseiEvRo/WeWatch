@@ -1,4 +1,4 @@
-package com.example.wewatch
+package com.example.wewatch.main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,10 +10,10 @@ import android.widget.Toast
 import androidx.lifecycle.asLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.wewatch.Model.Movie
 import com.example.wewatch.Model.MyDatabase
+import com.example.wewatch.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.example.wewatch.MainAdapter
+import com.example.wewatch.add.AddActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
