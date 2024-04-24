@@ -1,4 +1,4 @@
-package com.example.wewatch
+package com.example.wewatch.search
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.wewatch.R
-import com.example.wewatch.SearchActivity
 import com.example.wewatch.Model.Item
+import com.example.wewatch.Model.Movie
+import com.example.wewatch.R
 import com.squareup.picasso.Picasso
 
 
 
-class SearchAdapter(var list: List<Item>, var listener: SearchActivity.RecyclerItemListener, var context: Context): RecyclerView.Adapter<SearchAdapter.SearchHolder>() {
+class SearchAdapter(var list: List<Movie>, var listener: SearchActivity.RecyclerItemListener, var context: Context): RecyclerView.Adapter<SearchAdapter.SearchHolder>() {
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -41,13 +41,13 @@ class SearchAdapter(var list: List<Item>, var listener: SearchActivity.RecyclerI
         return list.size
     }
 
-    fun getItemAtPosition(pos: Int): Item {
+    fun getItemAtPosition(pos: Int): Movie {
         return list[pos]
     }
 
     inner class SearchHolder(view: View) : RecyclerView.ViewHolder(view) {
         var titleTextView: TextView = view.findViewById(R.id.title_textview)
-        var overviewTextView: TextView = view.findViewById(R.id.overview_overview)
+        var overviewTextView: TextView = view.findViewById(R.id.overview_textview)
         var releaseDateTextView: TextView = view.findViewById(R.id.release_date_textview)
         var imageView: ImageView = view.findViewById(R.id.movie_imageview)
 
